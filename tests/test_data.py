@@ -13,6 +13,24 @@ def test_repository_dataset():
     assert data.value.notna().any()
 
 
+def test_ocbc_uses_each_years_report():
+    data, sources = load_data()
+    for year in YEARS:
+        source_id = f"ocbc-ar-{year}"
+        source = sources.loc[sources.source_id == source_id]
+        assert len(source) == 1
+        assert source.iloc[0].company == "OCBC"
+        assert source.iloc[0].year == year
+        observations = data.loc[(data.company == "OCBC") & (data.year == year)]
+        assert observations.value.notna().all()
+        assert observations.source_id.eq(source_id).all()
+        highlights = observations.loc[observations.metric != "nim"]
+        assert highlights.source_page.eq(6 if year == 2024 else 4).all()
+        nim = observations.loc[observations.metric == "nim"].iloc[0]
+        assert nim.value == {2023: 2.28, 2024: 2.20, 2025: 1.91}[year]
+        assert nim.source_page == (96 if year == 2023 else 98)
+
+
 @pytest.mark.parametrize("column,value,message", [
     ("source_id", "unknown", "registered source"),
     ("source_page", None, "PDF page"),
