@@ -1,0 +1,8 @@
+source_id,company,year,title,local_path,url,sha256,verified_on
+dbs-ar-2023,DBS,2023,DBS Annual Report 2023,data/raw/DBS Annual Report 2023.pdf,,ea8baf8e532e0a126ab76a0b8eab07708113da964afe6138cf43bf109c2eb4f9,2026-10-25
+dbs-ar-2024,DBS,2024,DBS Annual Report 2024,data/raw/dbs-annual-report-2024.pdf,,1ed370bc84ddc775e004e3cdec65fa68af883604d6891bce68cb9c41241b8486,2026-10-25
+dbs-ar-2025,DBS,2025,DBS Annual Report 2025,data/raw/dbs-ar-2025.pdf,,e7952ba9dff9e339070334ec5d67a71c81a8c618be7f34abad6f3118189b38ce,2026-10-25
+uob-ar-2023,UOB,2023,UOB Annual Report 2023,data/raw/uob-annual-report-2023.pdf,,0da8e7d810f8be7569da4f9e8fd2e3e2a87343b56069beb6dbb754159732fc75,2026-10-25
+uob-ar-2024,UOB,2024,UOB Annual Report 2024,data/raw/uob-annual-report-2024.pdf,,58d913333731e8bc129acc781c4dc3afbbdcc5033bba7816c3c4cdbad4e8a5c4,2026-10-25
+uob-ar-2025,UOB,2025,UOB Annual Report 2025,data/raw/uob-annual-report-2025.pdf,,8f16c545145df604ac0e29df5369f1620dfa0a6063bbcf5fd21f3f71dd4438c6,2026-10-25
+ocbc-ar-2025,OCBC,2025,OCBC Annual Report 2025,data/raw/2025-OCBC-annual-report-en.pdf,,d10f4fc11fd5845c2e5e6c1ffbeccf0c66f33e1b71c02ae0b402f0ba104382ff,2026-10-25
